@@ -1,0 +1,47 @@
+mimic_iv_clinshap_project/
+│
+├── data/
+│   ├── raw/
+│   │   ├── discharge_diagnosis.csv
+│   │   ├── discharge_procedures.csv
+│   │   ├── history_of_present_illness.csv
+│   │   ├── icd_diagnosis.csv
+│   │   ├── icd_procedures.csv
+│   │   ├── lab_test_mapping.csv
+│   │   ├── laboratory_tests.csv
+│   │   ├── microbiology.csv
+│   │   ├── pathology_ids.json
+│   │   ├── physical_examination.csv
+│   │   └── radiology_reports.csv
+│   ├── processed/
+│   │   ├── combined_clinical_data.csv  # Preprocessed combined data
+│   │   └── feature_matrix.csv          # Final features for modeling
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_loading.py                 # Script to load raw data
+│   ├── preprocessing.py                # Data preprocessing and cleaning
+│   ├── feature_engineering.py          # Feature extraction and engineering
+│   ├── model_training.py               # Model training and evaluation
+│   ├── shap_analysis.py                # SHAP interpretability analysis
+│   └── utils.py                        # Utility functions (e.g., plotting, custom transforms)
+│
+├── notebooks/
+│   ├── data_exploration.ipynb          # Jupyter notebook for data exploration and EDA
+│   ├── model_training.ipynb            # Jupyter notebook for model training experiments
+│   └── shap_explanation.ipynb          # Jupyter notebook for SHAP analysis and visualization
+│
+├── reports/
+│   └── figures/
+│       ├── shap_summary_plot.png       # Example SHAP summary plot
+│       └── shap_force_plot.png         # Example SHAP force plot
+│
+├── tests/
+│   ├── test_data_loading.py            # Unit tests for data loading
+│   ├── test_preprocessing.py           # Unit tests for preprocessing steps
+│   ├── test_model_training.py          # Unit tests for model training
+│   └── test_shap_analysis.py           # Unit tests for SHAP analysis
+│
+├── requirements.txt                    # List of dependencies (e.g., pandas, sklearn, shap)
+├── README.md                           # Project overview and instructions
+└── main.py                             # Main script to run the project pipeline
