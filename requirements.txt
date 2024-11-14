@@ -8,3 +8,8 @@ joblib>=1.0.0
 threadpoolctl>=2.1.0
 jsonschema>=3.2.0
 jupyter>=1.0.0
+networkx
+dgl
+torch
+xgboost
+lightgbm
