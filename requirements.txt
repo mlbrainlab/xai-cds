@@ -13,3 +13,4 @@ dgl
 torch
 xgboost
 lightgbm
+tensorflow
